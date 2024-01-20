@@ -28,11 +28,17 @@ The label calculates all of the appliances's monthly bills and adds them to the 
 
 ![ScreenRecording2024-01-20at13 42 32-ezgif com-resize](https://github.com/John-Mark01/BG_ElectroBill/assets/147177515/22605d74-6cd0-4d64-9acd-1c11041914a4)
 
-* When inputting your power consumption data, you can choose between kWh and Wh. Based on what you choose the calculations will be correct. Sometimes the appliances's company does not provide the kWh power usage, but it gives the watts:
+* When inputting your power consumption data, you can choose between kWh and Wh. Based on what you choose the calculations will be correct. Sometimes the appliance company does not provide the kWh power usage, but it gives the watts per hour. The formula for calculating the monthly bill is kWh * timePerHour * price:
 
 ![wat-kwh-ezgif com-resize](https://github.com/John-Mark01/BG_ElectroBill/assets/147177515/b27c7d24-0a0c-43a1-bb1a-c2de51ba1938)
 
 * If the user is inputting text fields, they can dismiss the keyboard by clicking anywhere on the screen:
 
 ![ScreenRecording2024-01-20at14 42 06-ezgif com-resize](https://github.com/John-Mark01/BG_ElectroBill/assets/147177515/df1e25f5-9626-4c57-a9d3-2eaff418ccb9)
+
+* When the user is in the "Резултат" screen, he can delete individual cells, by swiping right. When a user does that, the label that calculates the monthly bill sum automatically updates. If he chooses to click the "trash" icon in the upper left corner, it will delete all the cells at ones.
+
+![Untitled-ezgif com-resize](https://github.com/John-Mark01/BG_ElectroBill/assets/147177515/a5602373-7306-4ae3-833a-08bd21959e45)
+
+![ScreenRecording2024-01-20at13 44 16-ezgif com-resize](https://github.com/John-Mark01/BG_ElectroBill/assets/147177515/9349148c-34b8-4baa-89c1-93b01cb009e6)
 
