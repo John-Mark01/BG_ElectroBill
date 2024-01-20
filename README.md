@@ -42,3 +42,23 @@ The label calculates all of the appliances's monthly bills and adds them to the 
 
 ![ScreenRecording2024-01-20at13 44 16-ezgif com-resize](https://github.com/John-Mark01/BG_ElectroBill/assets/147177515/9349148c-34b8-4baa-89c1-93b01cb009e6)
 
+## Dependencies
+
+In this project, I have used some cocoapods to add functionality to the app. Here is the list:
+* RealmSwift
+* SwipeCellKit
+* IQKeyboardManagerSwift
+
+## Installation
+# Example installation steps
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-username/your-ios-app.git
+
+
+## Contact
+
+If you want to contribute to this project or have any questions, you can contact me:
+- Email: johnmark.iliev@gmail.com
+- Facebook: https://www.facebook.com/john.iliev.92/
+
