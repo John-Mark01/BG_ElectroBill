@@ -4,7 +4,7 @@
 
 ## Usage
 ### Example usage instructions
-1. Clone and install the project (see the "Installation" instructions down below)
+1. Clone and install the project (see the "Installation" instructions down below) - NOTE: This app uses cocoapods. You need to install Ruby, Cocoapds, and HomeBrew to clone, view or contribute to the project.
 2. Open the app on your iOS device or simulator.
 3. Navigate to the settings page on the simulator to customize preferences.
     *  General -> Language & Region -> Number Format -> Set to 4th option (1234 567.89)
@@ -53,9 +53,23 @@ In this project, I have used some cocoapods to add functionality to the app. Her
 # Example installation steps
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/your-ios-app.git
-
-
+   git clone https://github.com/John-Mark01/BG_ElectroBill.git
+2. Install CocoaPods
+- open Terminal
+   ```bash
+   cd BG_ElectroBill
+   pod init
+- open pod file and paste:
+   ```bash
+    pod 'RealmSwift', '~>10'
+    pod 'SwipeCellKit'
+    pod 'IQKeyboardManagerSwift'
+- head back to Terminal
+   ```bash
+   pod install
+3. Open the ".xcworkspace" file
+4. Enjoy
+  
 ## Contact
 
 If you want to contribute to this project or have any questions, you can contact me:
