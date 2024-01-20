@@ -1,1 +1,1 @@
-## ElectroBill - The bulgarian electric bill calculator
+## ElectroBill - The Bulgarian Electric Bill Calculator
