@@ -44,6 +44,7 @@ class TableViewController: UITableViewController {
             guard let tableView = self?.tableView else { return }
             switch changes {
             case .initial:
+            
                 tableView.reloadData()
             case .update(_, _, let insertions, let modifications):
                 tableView.beginUpdates()
@@ -73,8 +74,9 @@ class TableViewController: UITableViewController {
         cell.cellTitle.text = items?[indexPath.row].aplienceTitle
         cell.cellPrice.text = items?[indexPath.row].price
         cell.delegate = self
-   
         
+        calculateMonthSum()
+   
         return cell
         
         
@@ -91,18 +93,20 @@ class TableViewController: UITableViewController {
             }
         }
         if sum == 0 {
+            totalLabel.text = "Общо: 0.0 лв/месец"
             totalLabel.textColor = .white
+            
         } else {
         
-            if sum <= 100 {
+            if sum <= 150 {
                 totalLabel.textColor = .systemGreen
-            } else if sum <= 150 {
+            } else if sum <= 200 {
                 totalLabel.textColor = .systemYellow
             } else {
                 totalLabel.textColor = .systemRed
             }
-            
-            totalLabel.text = "Общо: \(sum) лв/месец"
+            var convertedSum = String(format: "%.2f", sum)
+            totalLabel.text = "Общо: \(convertedSum) лв/месец"
         }
         
     }
@@ -147,6 +151,7 @@ extension TableViewController: SwipeTableViewCellDelegate {
                     do {
                         try self.realm.write {
                             self.realm.delete(deleteCell)
+                            self.calculateMonthSum()
                         }
                     } catch {
                         print("Error deleating a cell \(error)")
